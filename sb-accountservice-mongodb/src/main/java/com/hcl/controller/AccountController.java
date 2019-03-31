@@ -26,12 +26,7 @@ public class AccountController {
 	@Autowired
 	AccountRepository accountRepository;
 		
-	@RequestMapping(method = RequestMethod.GET, value = "/accounts")
-	public List<AccountModel> accounts() {
-		return (List<AccountModel>) accountRepository.findAll();
-	}
-	
-	
+		
 	@RequestMapping(value = "/add", method = RequestMethod.POST, consumes=MediaType.APPLICATION_JSON_VALUE)
 	public String addAccount(@RequestBody AccountModel accountModel) {
 		accountRepository.save(accountModel);
