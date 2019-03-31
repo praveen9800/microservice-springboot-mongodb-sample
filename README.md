@@ -76,3 +76,11 @@ http://localhost:8012/sb/add
 ```
 Account added successfully
 ```
+
+## Document stored in MongoDB
+
+
+![Image of Output](https://github.com/praveen9800/microservice-springboot-mongodb-sample/blob/master/mongodb_output.png)
+
+
+Here we can see the account data are stored as JSON-like document. ObjectId is the unique key automatically created by MongoDB when a new document is inserted.
